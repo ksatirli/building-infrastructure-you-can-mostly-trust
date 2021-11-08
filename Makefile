@@ -42,6 +42,11 @@ docs: # Generate documentation with `terraform-docs`
 			--config ".terraform-docs.yml" \
 			.
 
+.SILENT .PHONY: tflint
+tflint: # Validate code with `tflint`
+		tflint \
+			--config ".tflint.hcl"
+
 .SILENT .PHONY: pre-commit
 pre-commit: # Runs pre-commit checks with `pre-commit`
 		pre-commit \
