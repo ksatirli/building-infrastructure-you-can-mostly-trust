@@ -2,13 +2,6 @@ terraform {
   # see https://www.terraform.io/docs/language/settings/index.html#specifying-provider-requirements
   required_providers {
     # define the source and version of the provider
-    # see https://registry.terraform.io/providers/hashicorp/local/2.1.0
-    local = {
-      source  = "hashicorp/local"
-      version = "2.1.0"
-    }
-
-    # define the source and version of the provider
     # see https://registry.terraform.io/providers/yandex-cloud/yandex/0.66.0
     yandex = {
       source  = "yandex-cloud/yandex"

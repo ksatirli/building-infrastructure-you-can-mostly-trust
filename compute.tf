@@ -1,5 +1,5 @@
 # see https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/compute_instance
-resource "yandex_compute_instance" "exposition-test" {
+resource "yandex_compute_instance" "exposition" {
   name        = "vdnkh-1"
   platform_id = "standard-v1"
   zone        = var.yandex_zone
