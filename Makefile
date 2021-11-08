@@ -37,7 +37,13 @@ help: # Displays this help text
 	$(info )
 
 .SILENT .PHONY: docs
-docs: # Starts and provisions the Vagrant environment
+docs: # Generate documentation with `terraform-docs`
 		terraform-docs \
 			--config ".terraform-docs.yml" \
 			.
+
+.SILENT .PHONY: pre-commit
+pre-commit: # Runs pre-commit checks with `pre-commit`
+		pre-commit \
+			run \
+				--all-files
