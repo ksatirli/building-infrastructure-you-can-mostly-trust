@@ -1,0 +1,24 @@
+### Terraform ###
+
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+*.tfvars
+*.tfvars.json
+
+# .tfplan files
+*.tfplan*
+
+# Crash log files
+crash.log
+
+### Packer ###
+packer/generated.auto.pkrvars.hcl
+
+
+### Workshop-specific ignores ###
+iot.tfplan
