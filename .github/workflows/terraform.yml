@@ -4,19 +4,22 @@ name: Run Terraform
 on:
   - pull_request
 
-steps:
-  - uses: actions/checkout@v2
-  - uses: hashicorp/setup-terraform@v1
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: hashicorp/setup-terraform@v1
 
-  - name: Run `terraform fmt`
-    id: fmt
-    run: terraform fmt -check
-    continue-on-error: false
+      - name: Run `terraform fmt`
+        id: fmt
+        run: terraform fmt -check
+        continue-on-error: false
 
-  - name: Run `terraform init`
-    id: init
-    run: terraform init
+      - name: Run `terraform init`
+        id: init
+        run: terraform init
 
-  - name: Run `terraform validate`
-    id: validate
-    run: terraform validate -no-color
+      - name: Run `terraform validate`
+        id: validate
+        run: terraform validate -no-color
