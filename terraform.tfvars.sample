@@ -6,3 +6,6 @@ yandex_folder_id = "..."
 
 # see https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs#token
 yandex_token = "..."
+
+# see https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs#zone
+yandex_zone = "..."
