@@ -28,7 +28,7 @@
   - [pre-commit](https://pre-commit.com) `2.15.0` or later
 
 - Services
-  - [Yandex.Cloud](https://cloud.yandex.com/) (free credit)
+  - [Yandex.Cloud](https://cloud.yandex.com/)
 
 ## Usage
 
