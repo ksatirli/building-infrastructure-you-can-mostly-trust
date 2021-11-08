@@ -1,3 +1,5 @@
+---
+
 name: Generate Terraform Documentation
 on:
   - pull_request
