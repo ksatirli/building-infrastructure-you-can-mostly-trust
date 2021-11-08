@@ -46,7 +46,10 @@ This section contains all configuration options for the Terraform code in this r
 
 ### Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| console\_compute\_instance\_exposition | Console URL for `exposition` Compute Instance. |
+| console\_compute\_instances\_overview | Console URL for Compute Instances Overview. |
 <!-- END_TF_DOCS -->
 
 ## Author Information
