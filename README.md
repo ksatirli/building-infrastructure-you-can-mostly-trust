@@ -53,6 +53,10 @@ This section contains all configuration options for the Terraform code in this r
 | console\_compute\_instances\_overview | Console URL for Compute Instances Overview. |
 <!-- END_TF_DOCS -->
 
+## Notes
+
+* Config-driven move is a Terraform 1.1 feature. It is currently only available in [preview](https://github.com/hashicorp/terraform/blob/main/website/docs/language/modules/develop/refactoring.html.md).
+
 ## Author Information
 
 This repository is maintained by the contributors listed on [GitHub](https://github.com/ksatirli/building-infrastructure-you-can-mostly-trust/graphs/contributors).
