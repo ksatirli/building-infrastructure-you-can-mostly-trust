@@ -22,7 +22,7 @@
 ## Requirements
 
 - Software
-  - [HashiCorp Terraform](https://www.terraform.io/downloads.html) `1.0.9` or later
+  - [HashiCorp Terraform](https://www.terraform.io/downloads.html) `1.0.10` or later
   - [Yandex.Cloud Command-Line Interface](https://cloud.yandex.com/en/docs/cli/quickstart) `0.83.0` or later
   - [terraform-docs](https://terraform-docs.io) `0.16.0` or later
   - [pre-commit](https://pre-commit.com) `2.15.0` or later
