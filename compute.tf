@@ -9,6 +9,7 @@ resource "yandex_compute_instance" "exposition" {
     memory = 4
   }
 
+  # see https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/compute_instance#boot_disk
   boot_disk {
     # Defines whether the disk will be auto-deleted when the instance is deleted.
     #
@@ -23,6 +24,7 @@ resource "yandex_compute_instance" "exposition" {
     }
   }
 
+  # see https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/compute_instance#network_interface
   network_interface {
     subnet_id = data.yandex_vpc_subnet.default.id
   }

@@ -42,13 +42,38 @@ docs: # Generate documentation with `terraform-docs`
 			--config ".terraform-docs.yml" \
 			.
 
-.SILENT .PHONY: tflint
-tflint: # Validate code with `tflint`
-		tflint \
-			--config ".tflint.hcl"
-
 .SILENT .PHONY: pre-commit
 pre-commit: # Runs pre-commit checks with `pre-commit`
 		pre-commit \
 			run \
 				--all-files
+
+.SILENT .PHONY: rover
+rover: # Visualize Terraform Data Sources and Resources with `rover` (via Docker)
+		open "http://localhost:9000" \
+		&& \
+		docker \
+			run \
+				-it \
+				--rm \
+				-p "9000:9000" \
+				-v "$(CURDIR):/src" \
+				"im2nguyen/rover"
+
+# unsupported shorthand for Rover for `module-example`
+.SILENT .PHONY: rover-module
+rover-module:
+		open "http://localhost:9000" \
+		&& \
+		docker \
+			run \
+				-it \
+				--rm \
+				-p "9000:9000" \
+				-v "$(CURDIR)/module-example:/src" \
+				"im2nguyen/rover"
+
+.SILENT .PHONY: tflint
+tflint: # Validate code with `tflint`
+		tflint \
+			--config ".tflint.hcl"

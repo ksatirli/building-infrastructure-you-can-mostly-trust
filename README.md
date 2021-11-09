@@ -26,6 +26,7 @@
   - [Yandex.Cloud Command-Line Interface](https://cloud.yandex.com/en/docs/cli/quickstart) `0.83.0` or later
   - [terraform-docs](https://terraform-docs.io) `0.16.0` or later
   - [pre-commit](https://pre-commit.com) `2.15.0` or later
+  - [Rover](https://github.com/im2nguyen/rover) `0.2.1` or later
 
 - Services
   - [Yandex.Cloud](https://cloud.yandex.com/)
